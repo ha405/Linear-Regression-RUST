@@ -157,7 +157,7 @@ fn plot_loss(loss_history: &[f64]) -> Result<(), Box<dyn Error>> {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let (x, y) = read_dataset("D:/405 FOUND/Linear_Regression-RUST/src/human_zombie_dataset_v5.csv")?;
+    let (x, y) = read_dataset("Linear_Regression-RUST/src/dataset.csv")?;
     let x_normalized = normalize(&x);
     let (x_train, y_train, x_test, y_test) = split_data(&x_normalized, &y, 0.8);
 
